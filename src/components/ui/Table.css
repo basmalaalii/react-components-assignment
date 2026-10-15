@@ -1,0 +1,85 @@
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid var(--border, #e5e4e7);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  background: var(--bg, #fff);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.table__th {
+  background: linear-gradient(135deg, #6d28d9, #a855f7);
+  color: #fff;
+  text-align: left;
+  padding: 13px 18px;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.table__th:first-child {
+  border-radius: 12px 0 0 0;
+}
+
+.table__th:last-child {
+  border-radius: 0 12px 0 0;
+}
+
+.table__row {
+  transition: background 0.15s;
+}
+
+.table__row:hover {
+  background: rgba(109, 40, 217, 0.05);
+}
+
+.table__td {
+  padding: 12px 18px;
+  color: var(--text, #6b6375);
+  border-bottom: 1px solid var(--border, #e5e4e7);
+  vertical-align: middle;
+}
+
+.table__row:last-child .table__td {
+  border-bottom: none;
+}
+
+/* Striped rows */
+.table--striped .table__row:nth-child(even) {
+  background: rgba(109, 40, 217, 0.04);
+}
+
+.table--striped .table__row:nth-child(even):hover {
+  background: rgba(109, 40, 217, 0.08);
+}
+
+.table__empty {
+  padding: 32px;
+  text-align: center;
+  color: var(--text, #6b6375);
+  font-style: italic;
+}
+
+/* Status badges used in App */
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 99px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+.badge--in-stock   { background: #d1fae5; color: #065f46; }
+.badge--low-stock  { background: #fef3c7; color: #92400e; }
+.badge--out-of-stock { background: #fee2e2; color: #991b1b; }

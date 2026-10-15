@@ -1,0 +1,137 @@
+/* ── Google Font ── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* ── Reset & base ── */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #f6f4fb;
+  color: #3b3549;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  text-align: left;
+}
+
+/* ── App shell ── */
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+/* ── Header ── */
+.app__header {
+  text-align: center;
+}
+
+.app__tag {
+  display: inline-block;
+  background: linear-gradient(135deg, #6d28d9, #a855f7);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 4px 14px;
+  border-radius: 99px;
+  margin-bottom: 16px;
+}
+
+.app__title {
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  margin: 0 0 12px;
+  background: linear-gradient(135deg, #4c1d95, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.app__subtitle {
+  font-size: 16px;
+  color: #6b6375;
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ── Section ── */
+.app__section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.app__section-header {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+}
+
+.app__section-header h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+  color: #1e1b2e;
+}
+
+.app__section-header code {
+  font-size: 13px;
+  background: #ede9f8;
+  color: #6d28d9;
+  padding: 3px 9px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* ── Flex rows ── */
+.app__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+}
+
+.app__row--cards {
+  align-items: stretch;
+}
+
+/* ── Stats list inside Card children ── */
+.stats-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.stats-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background: #f6f4fb;
+  border-radius: 8px;
+}
+
+.stats-list span {
+  color: #6b6375;
+}
+
+.stats-list strong {
+  color: #1e1b2e;
+  font-weight: 700;
+}
